@@ -1,0 +1,182 @@
+@media screen and (max-width: 700px) {
+    body,
+        .container{
+            width: 100%;
+            padding: 0px;
+            }
+        }
+
+.jumbotron{
+    padding: 15%;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 400;
+    color: white;
+    background-color: hsl(191, 85%, 42%);
+    text-transform: capitalize;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+/* ini buat navigasinya */
+nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+nav li {
+    float: left;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover:not(.active) {
+    background-color: hsl(191, 85%, 42%)
+  }
+  
+.active {
+    background-color: hsl(190, 93%, 28%);
+  }
+/* tutup navigasi */
+
+
+/* ini buat dropdown */
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+.dropdown {
+    position: static;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+.dropdown-content a {
+    color: white;
+    padding: 14px 6px; 
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {background-color: hsl(191, 85%, 42%)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: hsl(191, 85%, 42%);
+  }
+/* tutup dropdown */
+
+
+/* css search button */
+form {
+    margin:0px auto;
+}
+.search {
+    margin-top: 7px;
+    padding:8px 14px;
+    border:0px solid #dbdbdb;
+    flex-flow: row;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+.button {
+    position:relative;
+    padding:6px 15px;
+    margin-right: 7px;
+    border-radius:5px hsl(190, 93%, 28%);
+    background-color: hsl(190, 93%, 28%);
+    color:#fafafa;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+.button:hover  {
+    background-color:  hsl(191, 85%, 42%);
+}
+          
+::-webkit-input-placeholder { /* For WebKit browsers */
+    color:    hsl(191, 85%, 42%);
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                font-weight:bold;
+}
+:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+    color:    hsl(191, 85%, 42%);
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                font-weight:bold;
+}
+::-moz-placeholder { /* For Mozilla Firefox 19+ */
+    color:    hsl(191, 85%, 42%);
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                font-weight:bold;
+}
+:-ms-input-placeholder { /* For Internet Explorer 10+ */
+    color:    hsl(191, 85%, 42%);
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                font-weight:bold;
+}	
+/* tutup search button */
+
+
+/* ini footer */
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+footer li {
+    float: inline-start;
+  }
+  
+footer li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.container{
+    display: flex;
+    background-color: black;
+    
+}
+.flex-1{
+    flex-grow: 1;
+    margin: 150px 50px;
+}
+.flex-2{
+    flex-grow: 2;
+    flex-basis: 70%;
+    margin: 100px;
+    padding: 10px;
+    text-align: left;
+    line-height: 55px;
+    font-size: 900;
+    color: white;
+}
+.featured-image{
+    width: 70%;
+    max-height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
