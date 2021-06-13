@@ -11,7 +11,7 @@ html {
 }
 
 body{
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:"Raleway", sans-serif;
   min-height: 100%;
 }
 .jumbotron{
@@ -26,34 +26,18 @@ body{
 }
 
 /* ini buat navigasinya */
-nav{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.navbar{
+    display:flex;
     background-color: rgb(2, 1, 1);
-    
-  }
-  
-nav li {
-    float: left;
-  }
-  
-nav li a {
-    display: block;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: sticky;
+}
+.navbar a {
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  nav li a:hover:not(.active) {
+.navbar a:hover:not(.active) {
     background-color: hsl(191, 85%, 42%)
   }
   
@@ -64,6 +48,11 @@ nav li a {
 
 
 /* ini buat dropdown */
+/* .dropdown {
+  display:grid;
+  position:static;
+  background-color: rgb(2, 1, 1);
+  }
 .dropbtn {
     background-color: rgb(2, 1, 1);
     color: white;
@@ -73,21 +62,16 @@ nav li a {
     cursor: pointer;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-.dropdown {
-    position: static;
-    display: inline-block;
-  }
 .dropdown-content {
-    display: none;
-    position: absolute;
+    display: flex;
+    display: contents;
     background-color: rgb(2, 1, 1);
-    min-width: 160px;
-    z-index: 1;
   }
 .dropdown-content a {
     color: white;
     padding: 14px 6px; 
     text-decoration: none;
+    position:relative;
     display: block;
   }
 .dropdown-content a:hover {background-color: hsl(191, 85%, 42%)}
@@ -97,13 +81,14 @@ nav li a {
 }
 .dropdown:hover .dropbtn {
     background-color: hsl(191, 85%, 42%);
-  }
+  } */
 /* tutup dropdown */
 
 
 /* css search button */
-form {
+/* form {
     margin:0px auto;
+    float: right;
 }
 .search {
     margin-top: 7px;
@@ -124,142 +109,129 @@ form {
     background-color:  hsl(191, 85%, 42%);
 }
           
-::-webkit-input-placeholder { /* For WebKit browsers */
+::-webkit-input-placeholder {
     color:    hsl(191, 85%, 42%);
                 font-family: 'Avenir', Helvetica, Arial, sans-serif;
                 font-weight:bold;
 }
-:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
     color:    hsl(191, 85%, 42%);
                 font-family: 'Avenir', Helvetica, Arial, sans-serif;
                 font-weight:bold;
 }
-::-moz-placeholder { /* For Mozilla Firefox 19+ */
+::-moz-placeholder {
     color:    hsl(191, 85%, 42%);
                 font-family: 'Avenir', Helvetica, Arial, sans-serif;
                 font-weight:bold;
 }
-:-ms-input-placeholder { /* For Internet Explorer 10+ */
+:-ms-input-placeholder {
     color:    hsl(191, 85%, 42%);
                 font-family: 'Avenir', Helvetica, Arial, sans-serif;
                 font-weight:bold;
-}	
+}	 */
 /* tutup search button */
 
 /* ini konten */
-
-.container{
-    box-sizing: border-box;
-    margin: 100px 0 0 0;
-    width: 100%;
-    min-height: 100%;
-    z-index: -5;
-    background-color: white;
-    display: flex;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3%;
 }
-.back1{
-  background-color: #6367EB;
-}
-.content-1 {
-  flex: 3;
-  width: 100%;
-  margin: 0;
-  background-color: white;
-}
-.content-1 h1{
-  font-size: 70px;
-}
-.content-2 {
-  flex: 1;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: white;
-}
-.content-2 ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.artikel {
-  box-sizing: border-box;
+.side{
+  flex: 20%;
   padding: 20px;
-  margin: 25px;
-  box-shadow: 1px 0 3px black;
+  margin: 1%;
+  background-color: #f1f1f1;
+  box-shadow: 1px 1px 6px black;
   border-radius: 3px;
-  min-height: 450px;
+  max-width: 900px;
 }
-.artikel a{
-  color: black;
-  text-align: left;
-  text-decoration: none;
+.side:hover{
+  background-color: rgb(226, 228, 228);
 }
-.content-2 .artikel{
-  background-color: rgb(232, 228, 228);
+.main{
+  position: flex;
+  margin: 1%;
+  flex: 70%;
+  padding: 20px;
+  box-shadow: 1px 1px 6px black;
+  border-radius: 3px;
+  max-width: 1200px;
 }
-.foto-profil{
-  border-radius: 100%;
+.skills{
+  position: flex;
+  margin: 1%;
+  flex: 80%;
+  padding: 20px;
+  box-shadow: 0px 1px 1px black;
+  border-radius: 3px;
+}
+.foto-side{
+  width: 100%;
+  object-fit:cover;
+  max-width: 300px;
+  margin: 3%;
+  float: left;
+}
+.foto-main{
+  width: 100%;
+  object-fit:contain;
   max-height: 300px;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  margin-bottom: 10px;
+  margin: 1%;
+  position: relative;
 }
-.data-profil{
-  margin: 5px;
-  padding: 20px ;
-  text-align: left;
-  word-spacing: 3px;
-}
-.artikel-profil{
-  text-align: justify;
-}
+
+
+.w3-large{font-size:18px!important;} 
+.w3-center{text-align:center!important}
+.w3-padding-16{padding-top:16px!important;padding-bottom:16px!important; padding: 5px;}
+.w3-wide{letter-spacing:4px; padding: 5px;}
+.w3-container,.w3-panel{padding:0.01em 16px} 
+.w3-padding-small{padding:4px 10px!important}
+.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+
+.w3-border{border:1px solid #ccc!important}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button{width:100%} .w3-button{white-space:normal} .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-button:disabled{cursor:not-allowed;opacity:0.3}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
 /* tutup konten */
 
 /* ini footer */
 /* #footer{
-  transform: translateY(10%);
-  transition: transform 0.3s step-start;
-  z-index: -100;
-} */
+  background-color: black;
+  color: white;
+  display:flex;
+  flex-wrap: wrap;
+}
 #footer ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 15px;
+    padding: 5px;
   }
-#footer li {
-    float: inline-start;
-  }
-  
+
 #footer li a {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  } */
+  
+/* Responsive */
+@media screen and (max-width : 678px){
+  .navbar{   
+    flex-direction: column;
   }
-
-#footer .container{
-    display: flex;
-    background-color: rgb(2, 1, 1);
-    color: white;
 }
-#footer .flex-1{
-    flex-grow: 1;
-    margin: 150px 50px;
+@media screen and (max-width : 3078px){
+  .row{   
+    flex-direction:row;
+  }
 }
-#footer .flex-2{
-    flex-grow: 2;
-    flex-basis: 70%;
-    margin: 100px;
-    padding: 10px;
-    text-align: left;
-    line-height: 55px;
-    font-size: 900;
-}
-#footer .featured-image{
-    width: 70%;
-    max-height: 200px;
-    object-position: center;
-}
+/* @media screen and (max-width : 678px){
+  .footer{   
+    flex-direction: column;
+  }
+} */
