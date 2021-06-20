@@ -7,7 +7,8 @@
 
     <title>WEB 2</title>
     <link rel="stylesheet" href="C:\proyek\My Web 2\CSS\style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
@@ -18,10 +19,10 @@
             <p class="lead">this is yours</p>
         </div>
     </header>
-    <div class= 'navbar'>
+    <!-- <div class= 'navbar'>
             <a class="active" href="C:\proyek\My Web 2\index.html">Beranda</a>
             <a href="C:\proyek\My Web 2\HTML\Portofolio.html">About Me</a>
-            <a href="C:\proyek\My Web 2\HTML\Portofolio2.html">Thanks for</a>
+            <a href="C:\proyek\My Web 2\HTML\Portofolio2.html">Thanks for</a> -->
             <!-- <div class="dropdown">
                 <a class="dropbtn">Portofolio</a>
                 <div class="dropdown-content">
@@ -33,32 +34,94 @@
                     <input class="search" type="text" placeholder="Cari..." required>
                     <input class="button" type="button" value="Cari">		
                 </form>
-                </a> -->
+                </a>
+    </div> -->
+
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="">LOGO</a></div>
+                    <ul class="links">
+                        <li><a class="active" href="C:\proyek\My Web 2\index.html">Beranda</a></li>
+                        <li><a href="C:\proyek\My Web 2\HTML\Portofolio.html">About Me</a></li>
+                        <li><a href="C:\proyek\My Web 2\HTML\Portofolio2.html">Thanks for</a></li>
+                        <li>
+                            <a href="" class="desktop-link">Portofolio</a>
+                            <input type="checkbox" id="show-portofolio">
+                            <label for="show-portofolio">Portofolio</label>
+                            <ul>
+                                <li><a href="">CVdsdsds</a></li>
+                                <li><a href="">WEBsdsdss 1</a></li>
+                                <li>
+                                    <a href="" class="desktop-link">WEBsdsds 2</a>
+                                    <input type="checkbox" id="show-website">
+                                    <label for="show-website">WEBsdsds 2</label>
+                                    <ul>
+                                        <li><a href="">CVdsdsd</a></li>
+                                        <li><a href="">WEBsdsds 1</a></li>
+                                        <li><a href="">WEBsdsds 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="desktop-link">Others Page</a>
+                            <input type="checkbox" id="show-others">
+                                <label for="show-others">Others Page</label>
+                            <ul>
+                                <li><a href="">CVsdsdsds</a></li>
+                                <li><a href="">WEBsdsds 1</a></li>
+                                <li><a href="">WEB dsdsd2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="" class="search-box">
+                <input type="text" placeholder="Cari..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
     </div>
 
 
 
-    <!-- <footer id="footer">
-        <div class="contain">
-            <div class="flex-1">
-                <figure><img src="C:\proyek\My Web 2\PICT\logo.jpg" alt="logo" class="featured-image"></figure>   
+    <footer class="footer">
+        <div class="container">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>About me</h4>
+                    <ul>
+                        <li><a href="">Contact Person</a></li>
+                        <li><a href="">My CV</a></li>
+                        <li><a href="">portofolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>thanks for</h4>
+                    <ul>
+                        <li><a href="https://codingstudio.id/" target="_blank">coding studio</li>
+                        <li><a href="https://www.wegodev.com/">Wegodev </a></li>
+                        <li><a href="https://www.w3schools.com/">W3School </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social media</h4>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/angga.samaludi"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/angga-samaludi-16a44a1b0/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Asamaludi26"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/AnggaSamaludi"><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-google"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="flex-2">Find Me On :
-                <ul>
-                    <li><a href="https://www.instagram.com/angga.samaludi">Instagram </a></li>
-                    <li><a href="https://twitter.com/AnggaSamaludi">Twitter </a></li>
-                    <li><a href="https://www.linkedin.com/in/angga-samaludi-16a44a1b0/">Linkedin </a></li>
-                    <li><a href="https://github.com/Asamaludi26">Github </a></li>
-                </ul>
-            </div>
-            <div class="flex-2">Thanks For :
-                <ul>
-                    <li><a href="https://codingstudio.id/">Coding Studio </a></li>
-                    <li><a href="https://www.wegodev.com/">Wegodev </a></li>
-                    <li><a href="https://www.w3schools.com/">W3School </a></li>
-                </ul>
-            </div>
+
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
