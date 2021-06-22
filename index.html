@@ -7,7 +7,8 @@
 
     <title>WEB 2</title>
     <link rel="stylesheet" href="C:\proyek\My Web 2\CSS\style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
@@ -18,47 +19,255 @@
             <p class="lead">this is yours</p>
         </div>
     </header>
-    <div class= 'navbar'>
-            <a class="active" href="/index.html">Beranda</a>
-            <a href="/HTML/Portofolio.html">About Me</a>
-            <a href="/HTML/Portofolio2.html">Thanks for</a>
-            <!-- <div class="dropdown">
-                <a class="dropbtn">Portofolio</a>
-                <div class="dropdown-content">
-                <a href="#">Proyek Vue</a>
-                <a href="#">Proyek Laravel</a>
-                </div>
-              </div> -->
-                <!-- <form>
-                    <input class="search" type="text" placeholder="Cari..." required>
-                    <input class="button" type="button" value="Cari">		
-                </form>
-                </a> -->
+
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href=""><img src="C:\proyek\My Web 2\PICT\logo2.jpg"></a></div>
+                    <ul class="links">
+                        <li><a class="active" href="C:\proyek\My Web 2\index.html">Beranda</a></li>
+                        <li><a href="C:\proyek\My Web 2\HTML\Portofolio.html">About Me</a></li>
+                        <li><a href="C:\proyek\My Web 2\HTML\Portofolio2.html">Thanks for</a></li>
+                        <li>
+                            <a href="" class="desktop-link">Portofolio</a>
+                            <input type="checkbox" id="show-portofolio">
+                            <label for="show-portofolio">Portofolio</label>
+                            <ul>
+                                <li><a href="">Test My Website 1</a></li>
+                                <li>
+                                    <a href="" class="desktop-link">Framework JavaScript</a>
+                                    <input type="checkbox" id="show-website">
+                                    <label for="show-website">Framework JavaScript</label>
+                                    <ul>
+                                        <li><a href="">VUE.JS</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="desktop-link">Framework PHP</a>
+                                    <input type="checkbox" id="show-website">
+                                    <label for="show-website">Framework PHP</label>
+                                    <ul>
+                                        <li><a href="">Laravel</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="desktop-link">Others Page</a>
+                            <input type="checkbox" id="show-others">
+                                <label for="show-others">Others Page</label>
+                            <ul>
+                                <li><a href="">Download My CV</a></li>
+                                <li><a href="">Contact Me</a></li>
+                                <li><a href="">Template Design</a></li>
+                                <li>
+                                    <a href="" class="desktop-link">My Trip</a>
+                                    <input type="checkbox" id="show-website">
+                                    <label for="show-website">My Trip</label>
+                                    <ul>
+                                        <li><a href="">Yogyakarta 2020</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="" class="search-box">
+                <input type="text" placeholder="Cari..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
     </div>
 
+    <div class="row">
+            
+        <div class="side">
+            <h2>Tentang Saya</h2>
+            <br><hr><br>
+            <p style="text-align: justify;">Hai, Perkenalkan nama saya Angga. 
+                Saya memiliki background pendidikan 
+                SMK Jurusan TKJ, dan sedang menjalani 
+                pendidikan di UNINDRA dengan 
+                Jurusan Teknik Informatika.</p>
+            <br>
+            <p style="text-align: justify;">Saya memiliki ketertarikan pada dunia 
+                IT yaitu pada pemrograman dan 
+                jaringan. Karena selain peluang kerja, 
+                dibidang ini saya dapat menuangkan 
+                ide dan menjadikannya sebuah karya 
+                yang menghasilkan khususnya pada 
+                pemrograman website dan aplikasi.</p>
+            <br>
+            <p style="text-align: justify;">Senang dengan tantangan dan ingin 
+                mencoba hal baru. Serta memiliki 
+                beberapa skill yang dapat 
+                dipertimbangkan termasuk skill dasar 
+                seorang pekerja/karyawan.
+                Sekian dan Terimakasih</p>
+            <br>
+                <h3>Kontak Personal</h3>
+                <br>
+                    <h4>Phone :</h4>
+                    <p>+62 856-9331-1085 (Pribadi)</p>
+                    <p>+62 812-8978-9568 (Kerja)</p>
+                <br>
+                <h3>Website</h3>
+                    <p>Github/Asamaludi26</p>
+                <br>
+                <h3>Email</h3>
+                    <p>a.samaludi@gmail.com</p>
+                <br>
+                <h3>Hobby</h3>
+                    <blockquote>
+                        <p>Traveling Solo</p>
+                        <p>Membaca Buku</p>
+                        <p>Coding</p>
+                        <p>Musik</p>
+                    </blockquote>
+        </div>
 
-
-    <!-- <footer id="footer">
-        <div class="contain">
-            <div class="flex-1">
-                <figure><img src="C:\proyek\My Web 2\PICT\logo.jpg" alt="logo" class="featured-image"></figure>   
+        <div class="main">
+            <h1>Angga<br>Samaludi</h1>
+            <br>
+            <h2>Web Programmer / Programmer</h2>
+            <br><hr>
+            <img src="C:\proyek\My Web 2\PICT\profile.png" alt="ini foto" class="foto-main">
+            <br>
+            <p class="w3-large w3-center w3-padding-16"><h2>Kemampuan:</h2></p>
+            <p class="w3-wide"><i class="fa fa-html5"></i>HTML</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
             </div>
-            <div class="flex-2">Find Me On :
-                <ul>
-                    <li><a href="https://www.instagram.com/angga.samaludi">Instagram </a></li>
-                    <li><a href="https://twitter.com/AnggaSamaludi">Twitter </a></li>
-                    <li><a href="https://www.linkedin.com/in/angga-samaludi-16a44a1b0/">Linkedin </a></li>
-                    <li><a href="https://github.com/Asamaludi26">Github </a></li>
-                </ul>
+            <p class="w3-wide"><i class="fa fa-css3"></i>CSS</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
             </div>
-            <div class="flex-2">Thanks For :
-                <ul>
-                    <li><a href="https://codingstudio.id/">Coding Studio </a></li>
-                    <li><a href="https://www.wegodev.com/">Wegodev </a></li>
-                    <li><a href="https://www.w3schools.com/">W3School </a></li>
-                </ul>
+            <p class="w3-wide"><i class="fa fa-code"></i>JavaScript</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:45%">45%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-git"></i>GIT</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
             </div>
         </div>
-    </footer> -->
+        
+        <div class="side">
+            <h2>Pendidikan</h2><hr>
+            <img src="C:\proyek\My Web 2\PICT\sekolah.jfif" alt="ini foto" class="foto-main"> 
+                <br>
+                    <b>SMKN 1 JAKARTA ( Teknik Komputer dan Jaringan )</b>
+                    <p>( 2016 - 2019 )</p><br>
+                    <p style="text-align: justify;">Menempuh pendidikan di Sekolah Menengah Kejuruan (SMK) yang berada
+                       di Jakarta Pusat, tepatnya Jl.Budi Utomo No.7 yaitu SMK NEGERI 1 JAKARTA.
+                       Saya mengambil masa pendidikan 3 tahun di jurusan Teknik Komputer dan Jaringan (TKJ). 
+                    </p><br>
+                    <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p>
+                    </p>
+        </div>
+        
+        <div class="side">
+            <h2>Pendidikan</h2><hr>
+            <img src="C:\proyek\My Web 2\PICT\sekolah2.jfif" alt="ini foto" class="foto-main"> 
+                <br>
+                    <b>UNIVERSITAS INDRAPRASTA PGRI ( Teknik Informatika )</b>
+                    <p>( Saat Ini )</p><br>
+                    <p style="text-align: justify;">Setelah lulus dari bangku sekolah menengah atas
+                        saya melanjutkan pendidikan di Universitas yang berada di Jakarta Selatan, 
+                        tepatnya TB. Simatupang, Jl. Nangka Raya No.58 C yaitu, UNIVERSITAS INDRAPRASTA PGRI pada jurusan Teknik Informatika. 
+                    </p><br>
+                    <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p>
+        </div>
+
+        <div class="main">
+                <h2>Pengalaman Kerja</h2>
+                <hr><br>
+                <img src="C:\proyek\My Web 2\PICT\fs.png" alt="ini foto" class="foto-main"> 
+                <div style="float: left;">
+                <b>PT. MEGA AKSES PERSADA (FIBERSTAR) JUNIOR AKTIVASI</b>
+                    <p>2019– 2021</p><br>
+                    <p>Bekerja selama 2 Tahun pada bidang Fiber Optik dengan jobdesc :</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia aliquid facere minima, temporibus vero? Vel illum sunt incidunt expedita ipsum, ex officia, minus nisi cupiditate eligendi, nihil error ullam.
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, aperiam eveniet corrupti, incidunt cum beatae, dignissimos molestiae animi tempore culpa assumenda. Officiis sed repudiandae iste at asperiores aspernatur, molestias sequi!
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos minus earum, quis optio obcaecati a minima, odio veniam aspernatur beatae delectus suscipit reiciendis assumenda iusto doloremque tenetur maiores adipisci mollitia?
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error quae, numquam officiis voluptatibus facilis nisi mollitia! Quod nulla natus tenetur rerum harum voluptate? Repellendus modi eum vel hic sequi.
+                    </p>
+                    <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p>
+                    <br><hr><br><br>
+                </div>
+
+                    
+                    <img src="C:\proyek\My Web 2\PICT\ujb.png" alt="ini foto" class="foto-main">
+                <div style="float: right;">
+                <b>PT. USAHA JAYAMAS BHAKTI IT SUPPORT ( MAGANG )</b>
+                    <p>2018 ( Februari – Mei )</p><br>
+                    <p>Menjadi siswa magang selama 3 bulan dengan jobdesc :</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia aliquid facere minima, temporibus vero? Vel illum sunt incidunt expedita ipsum, ex officia, minus nisi cupiditate eligendi, nihil error ullam.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, aperiam eveniet corrupti, incidunt cum beatae, dignissimos molestiae animi tempore culpa assumenda. Officiis sed repudiandae iste at asperiores aspernatur, molestias sequi!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos minus earum, quis optio obcaecati a minima, odio veniam aspernatur beatae delectus suscipit reiciendis assumenda iusto doloremque tenetur maiores adipisci mollitia?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error quae, numquam officiis voluptatibus facilis nisi mollitia! Quod nulla natus tenetur rerum harum voluptate? Repellendus modi eum vel hic sequi.
+                     </p>
+                     <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p> 
+                </div>
+            </div>
+
+        <div class="side">
+            <h2>Organisasi</h2><hr>
+            <img src="C:\proyek\My Web 2\PICT\profile.png" alt="ini foto" class="foto-main"> 
+                <br>
+                    <b>TEKSAPALA ( Teknik Satu Pecinta Alam )</b>
+                    <p>( Ketua Umum 2016 - 2019 )</p>
+                    <br>
+                    <p style="text-align: justify;">Setelah lulus dari bangku sekolah menengah atas
+                        saya melanjutkan pendidikan di Universitas yang berada di Jakarta Selatan, 
+                        tepatnya TB. Simatupang, Jl. Nangka Raya No.58 C yaitu, UNIVERSITAS INDRAPRASTA PGRI pada jurusan Teknik Informatika. 
+                    </p><br>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>About me</h4>
+                    <ul>
+                        <li><a href="">Contact Person</a></li>
+                        <li><a href="">My CV</a></li>
+                        <li><a href="">portofolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>thanks for</h4>
+                    <ul>
+                        <li><a href="https://codingstudio.id/" target="_blank">coding studio</li>
+                        <li><a href="https://www.wegodev.com/">Wegodev </a></li>
+                        <li><a href="https://www.w3schools.com/">W3School </a></li>
+                        <li><a href="https://www.brandcrowd.com/">Brandcrowd</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-col">
+                    <h4>Social media</h4>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/angga.samaludi"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/angga-samaludi-16a44a1b0/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Asamaludi26"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/AnggaSamaludi"><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-google"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            
+                <div class="footer-col">
+                       <img src="C:\proyek\My Web 2\PICT\logo1.jpg" alt="" class="foto-side">
+                </div>
+            </div>
+        </div>
+    </footer>
+       <h4><p style="color: white; text-align: center; padding: 1%; background-color: hsl(180, 3%, 6%); min-height: 50px;">© 2021. Design by Blitzkreig </p></h4>
 </body>
 </html>
