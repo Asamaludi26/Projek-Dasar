@@ -7,18 +7,56 @@
 
     <title>WEB 2</title>
     <link rel="stylesheet" href="C:\proyek\My Web 2\CSS\style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    
 </head>
 <body>
     
-    <header id="header">
-        <div class="jumbotron">
-            <h1 class="display-3">Welcome Home</h1>
-            <p class="lead">this is yours</p>
-        </div>
-    </header>
+    <div class="slider">
+		<!-- fade css -->
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Freedom</h1>
+				<blockquote>“From every mountainside, let freedom ring.” - Martin Luther King, Jr.</blockquote>
+                <p>Yogyakarta, 2020</p>
+			</div>
+            <div class="image"><img src="C:\proyek\My Web 2\PICT\1.jpg" style="width: 100%; height: 100%;"></div>
+			
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Travelling</h1>
+				<blockquote>“The world is a book, and those who do not travel read only one page.” – Saint Augustine</blockquote>
+                <p>Yogyakarta, 2020</p>
+			</div>
+            <div class="image"><img src="C:\proyek\My Web 2\PICT\3.jpg" style="width: 100%; height: 100%;"></div>
+			
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Kind</h1>
+				<blockquote>“My personal hobbies are reading, listening to music, and silence.” - Edith Sitwell</blockquote>
+                <p>Yogyakarta, 2020</p>
+			</div>
+            <div class="image"><img src="C:\proyek\My Web 2\PICT\4.jpg" style="width: 100%; height: 100%;"></div>
+			
+		</div>
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
 
     <div class="wrapper">
         <nav>
@@ -84,149 +122,47 @@
     </div>
 
     <div class="row">
-            
-        <div class="side">
-            <h2>Tentang Saya</h2>
-            <br><hr><br>
-            <p style="text-align: justify;">Hai, Perkenalkan nama saya Angga. 
-                Saya memiliki background pendidikan 
-                SMK Jurusan TKJ, dan sedang menjalani 
-                pendidikan di UNINDRA dengan 
-                Jurusan Teknik Informatika.</p>
-            <br>
-            <p style="text-align: justify;">Saya memiliki ketertarikan pada dunia 
-                IT yaitu pada pemrograman dan 
-                jaringan. Karena selain peluang kerja, 
-                dibidang ini saya dapat menuangkan 
-                ide dan menjadikannya sebuah karya 
-                yang menghasilkan khususnya pada 
-                pemrograman website dan aplikasi.</p>
-            <br>
-            <p style="text-align: justify;">Senang dengan tantangan dan ingin 
-                mencoba hal baru. Serta memiliki 
-                beberapa skill yang dapat 
-                dipertimbangkan termasuk skill dasar 
-                seorang pekerja/karyawan.
-                Sekian dan Terimakasih</p>
-            <br>
-                <h3>Kontak Personal</h3>
-                <br>
-                    <h4>Phone :</h4>
-                    <p>+62 856-9331-1085 (Pribadi)</p>
-                    <p>+62 812-8978-9568 (Kerja)</p>
-                <br>
-                <h3>Website</h3>
-                    <p>Github/Asamaludi26</p>
-                <br>
-                <h3>Email</h3>
-                    <p>a.samaludi@gmail.com</p>
-                <br>
-                <h3>Hobby</h3>
-                    <blockquote>
-                        <p>Traveling Solo</p>
-                        <p>Membaca Buku</p>
-                        <p>Coding</p>
-                        <p>Musik</p>
-                    </blockquote>
-        </div>
-
-        <div class="main">
-            <h1>Angga<br>Samaludi</h1>
-            <br>
-            <h2>Web Programmer / Programmer</h2>
-            <br><hr>
-            <img src="C:\proyek\My Web 2\PICT\profile.png" alt="ini foto" class="foto-main">
-            <br>
-            <p class="w3-large w3-center w3-padding-16"><h2>Kemampuan:</h2></p>
-            <p class="w3-wide"><i class="fa fa-html5"></i>HTML</p>
-            <div class="w3-light-grey">
-              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-css3"></i>CSS</p>
-            <div class="w3-light-grey">
-              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-code"></i>JavaScript</p>
-            <div class="w3-light-grey">
-              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:45%">45%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-git"></i>GIT</p>
-            <div class="w3-light-grey">
-              <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-            </div>
-        </div>
         
         <div class="side">
-            <h2>Pendidikan</h2><hr>
-            <img src="C:\proyek\My Web 2\PICT\sekolah.jfif" alt="ini foto" class="foto-main"> 
-                <br>
-                    <b>SMKN 1 JAKARTA ( Teknik Komputer dan Jaringan )</b>
-                    <p>( 2016 - 2019 )</p><br>
-                    <p style="text-align: justify;">Menempuh pendidikan di Sekolah Menengah Kejuruan (SMK) yang berada
-                       di Jakarta Pusat, tepatnya Jl.Budi Utomo No.7 yaitu SMK NEGERI 1 JAKARTA.
-                       Saya mengambil masa pendidikan 3 tahun di jurusan Teknik Komputer dan Jaringan (TKJ). 
-                    </p><br>
-                    <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p>
-                    </p>
-        </div>
-        
-        <div class="side">
-            <h2>Pendidikan</h2><hr>
-            <img src="C:\proyek\My Web 2\PICT\sekolah2.jfif" alt="ini foto" class="foto-main"> 
-                <br>
-                    <b>UNIVERSITAS INDRAPRASTA PGRI ( Teknik Informatika )</b>
-                    <p>( Saat Ini )</p><br>
-                    <p style="text-align: justify;">Setelah lulus dari bangku sekolah menengah atas
-                        saya melanjutkan pendidikan di Universitas yang berada di Jakarta Selatan, 
-                        tepatnya TB. Simatupang, Jl. Nangka Raya No.58 C yaitu, UNIVERSITAS INDRAPRASTA PGRI pada jurusan Teknik Informatika. 
-                    </p><br>
-                    <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p>
-        </div>
-
-        <div class="main">
-                <h2>Pengalaman Kerja</h2>
-                <hr><br>
-                <img src="C:\proyek\My Web 2\PICT\fs.png" alt="ini foto" class="foto-main"> 
-                <div style="float: left;">
-                <b>PT. MEGA AKSES PERSADA (FIBERSTAR) JUNIOR AKTIVASI</b>
-                    <p>2019– 2021</p><br>
-                    <p>Bekerja selama 2 Tahun pada bidang Fiber Optik dengan jobdesc :</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia aliquid facere minima, temporibus vero? Vel illum sunt incidunt expedita ipsum, ex officia, minus nisi cupiditate eligendi, nihil error ullam.
-                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, aperiam eveniet corrupti, incidunt cum beatae, dignissimos molestiae animi tempore culpa assumenda. Officiis sed repudiandae iste at asperiores aspernatur, molestias sequi!
-                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos minus earum, quis optio obcaecati a minima, odio veniam aspernatur beatae delectus suscipit reiciendis assumenda iusto doloremque tenetur maiores adipisci mollitia?
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error quae, numquam officiis voluptatibus facilis nisi mollitia! Quod nulla natus tenetur rerum harum voluptate? Repellendus modi eum vel hic sequi.
-                    </p>
-                    <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p>
-                    <br><hr><br><br>
-                </div>
-
-                    
-                    <img src="C:\proyek\My Web 2\PICT\ujb.png" alt="ini foto" class="foto-main">
-                <div style="float: right;">
-                <b>PT. USAHA JAYAMAS BHAKTI IT SUPPORT ( MAGANG )</b>
-                    <p>2018 ( Februari – Mei )</p><br>
-                    <p>Menjadi siswa magang selama 3 bulan dengan jobdesc :</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia aliquid facere minima, temporibus vero? Vel illum sunt incidunt expedita ipsum, ex officia, minus nisi cupiditate eligendi, nihil error ullam.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, aperiam eveniet corrupti, incidunt cum beatae, dignissimos molestiae animi tempore culpa assumenda. Officiis sed repudiandae iste at asperiores aspernatur, molestias sequi!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos minus earum, quis optio obcaecati a minima, odio veniam aspernatur beatae delectus suscipit reiciendis assumenda iusto doloremque tenetur maiores adipisci mollitia?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error quae, numquam officiis voluptatibus facilis nisi mollitia! Quod nulla natus tenetur rerum harum voluptate? Repellendus modi eum vel hic sequi.
-                     </p>
-                     <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Selengkapnya...</b></button></p> 
-                </div>
-            </div>
-
-        <div class="side">
-            <h2>Organisasi</h2><hr>
-            <img src="C:\proyek\My Web 2\PICT\profile.png" alt="ini foto" class="foto-main"> 
-                <br>
-                    <b>TEKSAPALA ( Teknik Satu Pecinta Alam )</b>
-                    <p>( Ketua Umum 2016 - 2019 )</p>
+            <h1><a href="#" target="_blank"></a></h1>
                     <br>
-                    <p style="text-align: justify;">Setelah lulus dari bangku sekolah menengah atas
-                        saya melanjutkan pendidikan di Universitas yang berada di Jakarta Selatan, 
-                        tepatnya TB. Simatupang, Jl. Nangka Raya No.58 C yaitu, UNIVERSITAS INDRAPRASTA PGRI pada jurusan Teknik Informatika. 
-                    </p><br>
-        </div>
+                    <h2>Travelling</h2>
+                    <br>
+                    <img src="C:\proyek\My Web 2\PICT\1.jpg" alt="travelling" class="foto-main">
+                    <br>
+                        <!-- <p>Coding Studio adalah startup edutech yang didirikan oleh beberapa anak muda pada tahun 2020. 
+                        Setelah banyak mengikuti berbagai pengalaman organisasi, acara dan pendidikan di kampus. 
+                        Para founder merasa bahwa Indonesia memiliki potensi yang sangat besar untuk semakin maju di bidang teknologi 
+                        mengingat pertumbuhan startup IT yang sangat pesat di beberapa tahun silam 
+                    </p> -->
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b><a target="_blank" href="#">Lanjut Membaca...</a></b></button></p>
+            </div>
+        
+        <div class="side">
+                <h1><a href=""></a></h1>
+                    <br>
+                    <h2>Travelling</h2>
+                    <br>
+                    <img src="C:\proyek\My Web 2\PICT\2.jpg" alt="travelling" class="foto-main">
+                    <br>
+                        <!-- <p>Materi yang diberikan berupa studi kasus dan bersamaan dengan dasar-dasar programming, sehingga pelajar 
+                        benar-benar mengerti proses pembuatan aplikasi dari awal.</p>                        -->
+                 <p><button class="w3-button w3-padding-large w3-white w3-border"><b> <a target="_blank" href="#">Lanjut Membaca...</a></b></button></p> 
+            </div>
+        
+        <div class="side">
+            <h1><a href=""></a></h1>
+                    <br>
+                    <h2>Travelling</h2>
+                    <br>
+                    <img src="C:\proyek\My Web 2\PICT\3.jpg" alt="travelling" class="foto-main">
+                    <br>
+                        <!-- <p>The Largest Web Developer Site on the Internet
+                            3 Billion Pages Displayed Each Year
+                            60 Million Visitors Every Month
+                        </p> -->
+                  <p><button class="w3-button w3-padding-large w3-white w3-border"><b><a target="_blank" href="#">Lanjut Membaca...</a></b></button></p> 
+            </div>
     </div>
 
     <footer class="footer">
@@ -267,7 +203,9 @@
                 </div>
             </div>
         </div>
+        <h4><p style=" color: white; text-align: center; margin: 3% 0 -100px 0; padding: 1%; background-color: hsl(180, 3%, 6%); min-height: 50px;">© 2021. Design by Blitzkreig </p></h4>
     </footer>
-       <h4><p style="color: white; text-align: center; padding: 1%; background-color: hsl(180, 3%, 6%); min-height: 50px;">© 2021. Design by Blitzkreig </p></h4>
+       
+    <script src="C:\proyek\My Web 2\JS\javascript.js"></script>
 </body>
 </html>
