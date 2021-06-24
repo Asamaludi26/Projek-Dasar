@@ -7,18 +7,62 @@
 
     <title>WEB 2</title>
     <link rel="stylesheet" href="\CSS\style.css">
+    <link rel="stylesheet" href="\CSS\content.css">
+    <link rel="stylesheet" href="\CSS\slider.css">
+    <link rel="stylesheet" href="\CSS\navbar.css">
+    <link rel="stylesheet" href="\CSS\footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
 </head>
 <body>
     
-    <header id="header">
-        <div class="jumbotron">
-            <h1 class="display-3">Welcome Home</h1>
-            <p class="lead">this is yours</p>
-        </div>
-    </header>
+    <div class="slider">
+		<!-- fade css -->
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Freedom</h1>
+				<blockquote>“From every mountainside, let freedom ring.” - Martin Luther King, Jr.</blockquote>
+                <p>Yogyakarta, 2020</p>
+			</div>
+            <div class="image"><img src="\PICT\1.jpg" style="width: 100%; height: 100%;"></div>
+			
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Travelling</h1>
+				<blockquote>“The world is a book, and those who do not travel read only one page.” – Saint Augustine</blockquote>
+                <p>Yogyakarta, 2020</p>
+			</div>
+            <div class="image"><img src="\PICT\3.jpg" style="width: 100%; height: 100%;"></div>
+			
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Kind</h1>
+				<blockquote>“My personal hobbies are reading, listening to music, and silence.” - Edith Sitwell</blockquote>
+                <p>Yogyakarta, 2020</p>
+			</div>
+            <div class="image"><img src="\PICT\4.jpg" style="width: 100%; height: 100%;"></div>
+			
+		</div>
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
 
     <div class="wrapper">
         <nav>
@@ -26,7 +70,7 @@
             <input type="checkbox" id="show-menu">
             <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
             <div class="content">
-                <div class="logo"><a href="">LOGO</a></div>
+                <div class="logo"><a href=""><img src="\PICT\logo2.jpg"></a></div>
                     <ul class="links">
                         <li><a class="active" href="\index.html">Beranda</a></li>
                         <li><a href="\HTML\Portofolio.html">About Me</a></li>
@@ -36,16 +80,21 @@
                             <input type="checkbox" id="show-portofolio">
                             <label for="show-portofolio">Portofolio</label>
                             <ul>
-                                <li><a href="">CVdsdsds</a></li>
-                                <li><a href="">WEBsdsdss 1</a></li>
+                                <li><a href="">Test My Website 1</a></li>
                                 <li>
-                                    <a href="" class="desktop-link">WEBsdsds 2</a>
+                                    <a href="" class="desktop-link">Framework JavaScript</a>
                                     <input type="checkbox" id="show-website">
-                                    <label for="show-website">WEBsdsds 2</label>
+                                    <label for="show-website">Framework JavaScript</label>
                                     <ul>
-                                        <li><a href="">CVdsdsd</a></li>
-                                        <li><a href="">WEBsdsds 1</a></li>
-                                        <li><a href="">WEBsdsds 2</a></li>
+                                        <li><a href="">VUE.JS</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="desktop-link">Framework PHP</a>
+                                    <input type="checkbox" id="show-website">
+                                    <label for="show-website">Framework PHP</label>
+                                    <ul>
+                                        <li><a href="">Laravel</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -55,9 +104,17 @@
                             <input type="checkbox" id="show-others">
                                 <label for="show-others">Others Page</label>
                             <ul>
-                                <li><a href="">CVsdsdsds</a></li>
-                                <li><a href="">WEBsdsds 1</a></li>
-                                <li><a href="">WEB dsdsd2</a></li>
+                                <li><a href="">Download My CV</a></li>
+                                <li><a href="">Contact Me</a></li>
+                                <li><a href="">Template Design</a></li>
+                                <li>
+                                    <a href="" class="desktop-link">My Trip</a>
+                                    <input type="checkbox" id="show-website">
+                                    <label for="show-website">My Trip</label>
+                                    <ul>
+                                        <li><a href="">Yogyakarta 2020</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -68,9 +125,38 @@
                 <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
         </nav>
+    </div>    
+	
+    <div class="body2">
+        <div class="about" style="background: url('/PICT/5.jpg') no-repeat right; background-size: 55%;
+        background-color: rgba(0, 0, 0, 0.735);">
+            <div class="inner-section">
+                <h1>Jugle Live</h1>
+                <p class="text-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum similique exercitationem, 
+                    esse ducimus sapiente qui aliquid corrupti, vel deserunt optio, quia doloremque quasi blanditiis. 
+                    Est vel cumque assumenda maxime aliquam!
+                </p>
+                <div class="klik"><a>Selengkapnya...</a></div>
+            </div>
+        </div>
     </div>
 
-
+    <div class="body2">
+        <div class="about2" style="background: url('/PICT/2.jpg') no-repeat left; background-size: 55%;   
+        background-color: hsl(191, 85%, 42%);">
+            <div class="inner-section2">
+                <h1>Urban Live</h1>
+                <p class="text-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum similique exercitationem, 
+                    esse ducimus sapiente qui aliquid corrupti, vel deserunt optio, quia doloremque quasi blanditiis. 
+                    Est vel cumque assumenda maxime aliquam!
+                </p>
+                <div class="klik2"><a>Selengkapnya...</a></div>
+            </div>
+        </div>
+    </div>
+    
 
     <footer class="footer">
         <div class="container">
@@ -83,28 +169,38 @@
                         <li><a href="">portofolio</a></li>
                     </ul>
                 </div>
+		    
                 <div class="footer-col">
                     <h4>thanks for</h4>
                     <ul>
                         <li><a href="https://codingstudio.id/" target="_blank">coding studio</li>
-                        <li><a href="https://www.wegodev.com/">Wegodev </a></li>
-                        <li><a href="https://www.w3schools.com/">W3School </a></li>
+                        <li><a href="https://www.wegodev.com/" target="_blank">Wegodev </a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School </a></li>
+                        <li><a href="https://www.brandcrowd.com/" target="_blank">Brandcrowd</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Social media</h4>
                     <div class="social-media">
-                        <a href="https://www.instagram.com/angga.samaludi"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/angga-samaludi-16a44a1b0/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Asamaludi26"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/AnggaSamaludi"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/angga.samaludi" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/angga-samaludi-16a44a1b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Asamaludi26" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/AnggaSamaludi" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href=""><i class="fab fa-google"></i></a>
                         <a href=""><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
 
+                <div class="footer-col">
+                       <img src="\PICT\logo1.jpg" alt="" class="foto-main">
+                </div>
+            </div>
         </div>
+        <h4><p style=" color: white; text-align: center; margin: 3% 0 -100px 0; padding: 1%; background-color: hsl(180, 3%, 6%); min-height: 50px;">© 2021. Design by Blitzkreig </p></h4>
     </footer>
+       
+    <script src="\JS\javascript.js"></script>
+    
 </body>
 </html>
