@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body{
+  line-height: 1,5;
+  background-color: black;
+  font-family: Space;
+  font-family: 'Kirang Haerang', cursive;
+  }
+
+  /* CSS For Footer */
+.footer{
+    background-color: black;
+    padding: 70px 0;
+    position:sticky;
+  }
+  .row-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container{
+    max-width: 1080px;
+    margin: auto;
+  }
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: hsl(190, 93%, 28%);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 15px;
+  }
+  .footer-col ul li a{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s ease;
+  }
+  .footer-col ul li a:hover{
+    padding-left: 15px;
+    color: white;
+  }
+  .footer-col .social-media a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: hsl(190, 93%, 28%);
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-media a:hover{
+    padding-left: 15px;
+    color: hsl(191, 85%, 42%);
+  }
+  ul{
+    list-style: none;
+  }
+  @media screen and (max-width: 678px) {
+    .footer-col{
+      width: 59%;
+      margin-bottom: 25px;
+    }
+  }
+    /* End For Footer */
